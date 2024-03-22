@@ -54,7 +54,7 @@ sr.reveal('.home-content p, .about-content', { origin: 'right' });
 // typed js 
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer',  'Web Developer','SQA ENGINEER','Test Automation Engineer'],
+    strings: ['Mern Developer', 'SQA ENGINEER','Test Automation Engineer',"U/Ux developer"],
     typeSpeed: 100,
     backSpeed : 100,
     backDelay: 1000,
@@ -82,6 +82,33 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
+
+
+
+const navLinks2 = document.querySelectorAll('.nav-link');
+  const sections2 = document.querySelectorAll('.section');
+
+  navLinks2.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default anchor behavior
+
+      // Remove 'active' class from all links
+      navLinks2.forEach(link => {
+        link.classList.remove('active');
+      });
+
+      // Add 'active' class to the clicked link
+      this.classList.add('active');
+
+      // Get the target section ID
+      const targetId = this.getAttribute('href');
+
+      // Scroll to the target section
+      document.querySelector(targetId).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
 
 
 

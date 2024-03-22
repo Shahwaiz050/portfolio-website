@@ -112,6 +112,21 @@ const navLinks2 = document.querySelectorAll('.nav-link');
 
 
 
+  function topFunction() {
+    // Remove 'active' class from all links
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+    });
+
+    // Add 'active' class to the HOME link
+    document.querySelector('[href="#home"]').classList.add('active');
+
+    // Scroll to top
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
 
 
 

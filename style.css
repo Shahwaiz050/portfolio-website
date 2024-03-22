@@ -208,7 +208,8 @@ span {
 }
 
 .services-container .services-box {
-  width: 65rem;
+  width: 35rem;
+  height: 30rem;
   background: var(--second-bg-color);
   padding: 3rem 2rem;
   border-radius: 2rem;
@@ -398,7 +399,7 @@ span {
 
 .profile-pic img{
     width: 100%; /* Make the image fill the circular div */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%;
 }
 
 .footer-iconTop{
@@ -437,6 +438,7 @@ span {
   html {
     font-size: 55%;
   }
+  
 }
 
 /* Media queries with 991 px  */
@@ -518,8 +520,17 @@ span {
 
   .about {
     flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
+  .about-content{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .about img {
     width: 70vw;
     margin-top: 4rem;
@@ -536,6 +547,28 @@ span {
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .profile-pic{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    background-image: url('images/profile-pic.jpeg');
+    background-size: contain;
+ 
+    
+  
+  
+  }
+  .profile-pic img{
+    width: 200%; /* Make the image fill the circular div */
+    /* Maintain aspect ratio */
+    display: inline-block;
+    margin-bottom: 20px;
+    display: none;
+    
+}
+
 
 }
 

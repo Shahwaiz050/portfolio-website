@@ -54,7 +54,7 @@ sr.reveal('.home-content p, .about-content', { origin: 'right' });
 // typed js 
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Mern Developer', 'SQA ENGINEER','Test Automation Engineer',"U/Ux developer"],
+    strings: ['Mern Stack Developer', 'SQA ENGINEER','Test Automation Engineer',"U/Ux developer"],
     typeSpeed: 100,
     backSpeed : 100,
     backDelay: 1000,
